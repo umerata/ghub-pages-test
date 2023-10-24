@@ -9,17 +9,12 @@
             margin: 0;
             padding: 0;
         }
-        .h-cont{
-            display: inline-flex;
-            justify-content: center;
-            align-items: flex-start;
-        }
         .hblock{
             display: flex;
             align-items: center;
             justify-content: center;
-            /* position: fixed; */
-            /* top: 0; */
+            position: fixed;
+            top: 0;
             color: #fff;
             font-weight: 600;
             font-size: 20px;
@@ -27,61 +22,51 @@
         }
 
         .height-1{
+            left: 0;
             background-color: #3498db;
             height: 100vh;
         }
 
         .height-2{
+            left: calc(15vw + 10px);
             background-color: #2ecc71;
             height: 100svh;
         }
         .height-3{
+            left: calc(30vw + 20px);
             background-color: #f1c40f;
             height: 100lvh;
         }
         .height-4{
+            left: calc(45vw + 30px);
             background-color: #9b59b6;
             height: 100dvh;
         }
         .height-5{
+            left: calc(60vw + 40px);
             background-color: #e74c3c;
             height: 100%;
-        }
-
-        .h-cont-100{
-            position: fixed;
-            right: 0;
-            display: inline-flex;
-            min-height: 100%;
-            height: 100%;
-            align-items: center;
-            color: #fff;
-            font-weight: 600;
-            font-size: 20px;
-            width: calc(15vw);
         }
     </style>
 </head>
 <body>
-    <div class="h-cont">
-        <div class="height-1 hblock">
-            vh
-        </div>
-
-        <div class="height-2 hblock">
-            svh
-        </div>
-
-        <div class="height-3 hblock">
-            lvh
-        </div>
-
-        <div class="height-4 hblock">
-            dvh
-        </div>
-        
+    <div class="height-1 hblock">
+        vh
     </div>
-    <div class="h-cont-100 height-5 hblock">
+
+    <div class="height-2 hblock">
+        svh
+    </div>
+
+    <div class="height-3 hblock">
+        lvh
+    </div>
+
+    <div class="height-4 hblock">
+        dvh
+    </div>
+
+    <div class="height-5 hblock">
         100%
     </div>
 
