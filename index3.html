@@ -41,10 +41,26 @@
             border: 4px solid red;
             background-color: #2ecc71;
         }
+        .test-input{
+            position: fixed;
+            top: 50px;
+            left: 30px;
+            right: 30px;
+            width: calc(100vw - 60px);
+            z-index: 10;
+        }
+        .test-input input{
+            width: 100%;
+            height: 40px;
+
+        }
     </style>
 </head>
 <body>
     <div class="app">
+        <div class="test-input">
+            <input type="text" placeholder="focus me">
+        </div>
         <div class="app-inner">
             <div class="toBottom">Bottom Part</div>
             <div class="fixed-bottom">Fixed Bottom Part</div>
